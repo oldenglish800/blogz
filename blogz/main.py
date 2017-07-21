@@ -12,6 +12,7 @@ def require_login():
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
+    #create validation
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -81,7 +82,7 @@ def index():
 
 @app.route('/blog', methods=['GET', 'POST'])
 def main_page():
-
+    #return id
     if request.args.get('id'):
         id = int(request.args.get('id'))
         blogs = [Blog.query.get(id)]
