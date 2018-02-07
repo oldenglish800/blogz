@@ -8,7 +8,7 @@ To install:
 2. Activate Flask environment from the Command Line. 
 - $ source activate flask-env
 
-3. Open "Python main.py" from the Command Line.
+3. Open "python main.py" from the Command Line.
 - $ python main.py
 
 4. From internet browser open Local Host.
